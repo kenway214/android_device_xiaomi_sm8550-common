@@ -151,6 +151,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
 
+# Gamebar
+$(call inherit-product, packages/apps/GameBar/gamebar.mk)
+
 # Graphics
 PRODUCT_PACKAGES += \
     gralloc.default
